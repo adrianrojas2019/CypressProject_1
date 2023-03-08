@@ -27,7 +27,7 @@ describe("Assertions Demo", function () {
         cy.get('input[placeholder="Password"]').type("admin123")
         cy.get('button[type="submit"]').click()
 
-        let expName = "(#((*(@*()45 Collings"
+        let expName = "Paul Collings"
 
         cy.get('.oxd-userdropdown-name').then((x) => {
             let actName = x.text()
