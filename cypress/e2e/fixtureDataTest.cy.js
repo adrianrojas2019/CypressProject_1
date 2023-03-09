@@ -1,4 +1,4 @@
-import {LoginPage} from './pages/login_page'
+import {LoginPage} from '../pages/LoginPOMPage'
 const loginPage = new LoginPage
 
 describe('MyTestSuite', () => {

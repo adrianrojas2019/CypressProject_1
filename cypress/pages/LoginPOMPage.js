@@ -1,4 +1,4 @@
-export class LoginPage {
+class LoginPage {
 
     username_textbox = '[name="username"]'
     password_textbox = '[name="password"]'
@@ -21,3 +21,5 @@ export class LoginPage {
         cy.get(this.result).should('have.text', value)
     }
 }
+
+export const loginPage =  new LoginPage()

@@ -22,7 +22,6 @@ import '@shelex/cypress-allure-plugin';
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-
 // beforeEach(function(){
 //     cy.log(' I am inside e2e.js')
 // })
