@@ -1,5 +1,4 @@
-import {LoginPage} from '../pages/LoginPOMPage'
-const loginPage = new LoginPage
+import { loginPage } from '@pages/LoginPage'
 
 describe('All Login Tests', function() {
 
