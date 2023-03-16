@@ -28,13 +28,14 @@ async function setupNodeEvents(on, config) {
 
 module.exports = defineConfig({
   e2e: {
+    reporter: 'cypress-mochawesome-reporter',
     setupNodeEvents,
     //specPattern: "cypress/e2e/features/*.feature",
     specPattern: "cypress/e2e/*.js",
     baseUrl: "https://www.saucedemo.com",
     chromeWebSecurity: false,
     env: {
-      allureReuseAfterSpec: true,
+      allureReuseAfterSpec: false,
     },
   },
 });
