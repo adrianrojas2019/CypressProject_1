@@ -1,5 +1,5 @@
 const { defineConfig } = require("cypress");
-const {downloadFile} = require('cypress-downloadfile/lib/addPlugin')
+const { downloadFile } = require('cypress-downloadfile/lib/addPlugin')
 const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
 const preprocessor = require("@badeball/cypress-cucumber-preprocessor");
 const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild");
@@ -30,8 +30,8 @@ module.exports = defineConfig({
   e2e: {
     reporter: 'cypress-mochawesome-reporter',
     setupNodeEvents,
-    //specPattern: "cypress/e2e/features/*.feature",
-    specPattern: "cypress/e2e/*.js",
+    specPattern: "cypress/e2e/features/*.feature",
+    //specPattern: "cypress/e2e/*.js",
     baseUrl: "https://www.saucedemo.com",
     chromeWebSecurity: false,
     env: {
